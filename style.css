@@ -1,0 +1,130 @@
+body{
+    background-image: url(nbg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    
+}
+.moon{
+    position: absolute;
+    bottom: -3 ;
+    left: 27%;
+    width: 340px;
+    filter: drop-shadow(0 0 10px yellow)
+    drop-shadow(0 0 25px gold)
+    drop-shadow(0 0 50px orange);
+    
+    animation: moonGlow 3s ease-in-out infinite alternate;
+}
+@keyframes moonGlow {
+    from {
+        filter: drop-shadow(0 0 10px yellow)
+    drop-shadow(0 0 25px gold)
+    drop-shadow(0 0 40px orange);
+    }
+    to{
+        filter: drop-shadow(0 0 20px yellow)
+    drop-shadow(0 0 40px gold)
+    drop-shadow(0 0 70px orange);
+    }
+}
+.c{
+    position: absolute;
+    width: 130px;
+ top: 400px;
+ animation-name: mc,jc;
+ animation-duration: 6s,1s;
+ animation-timing-function: linear, ease-in-out;
+ animation-iteration-count: infinite, infinite;
+
+
+}
+
+@keyframes mc{
+    0%{
+        left: 0;
+        opacity: 1;
+    }
+    99%{
+        left: 110%;
+        opacity: 1;
+    }
+    100%{
+        left: 110%;
+        opacity: 0;
+    }
+}
+@keyframes jc{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+}
+
+.campfire{
+    object-fit: contain;
+    width: 300px;
+   clip-path: inset(10%);
+position: fixed;
+bottom: -40px;
+left: 40%;
+}
+
+.c1{
+    position: absolute;
+    width: 330px;
+ top: 100px;
+ animation-name: mc1;
+ animation-duration: 12s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+
+}
+
+@keyframes mc1{
+    0%{
+        left: -20%;
+        opacity: 1;
+    }
+    99%{
+        left: 110%;
+        opacity: 1;
+    }
+    100%{
+        left: 110%;
+        opacity: 1;
+    }
+}
+
+.c2{
+    position: absolute;
+    width: 330px;
+ top: 0;
+ animation-name: mc1;
+ animation-duration: 12s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-direction: reverse;
+
+
+}
+
+@keyframes mc2{
+    0%{
+        left: -20%;
+        opacity: 1;
+    }
+    99%{
+        left: 110%;
+        opacity: 1;
+    }
+    
+    100%{
+        left: 110%;
+        opacity: 1;
+    }
+}
